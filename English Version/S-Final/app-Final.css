@@ -1,0 +1,307 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0px;
+    background-color: #080710;
+}
+
+.container{
+    
+}
+
+/* User Button  */
+.user__profile{
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* button */
+.in__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: aqua;
+    padding: 5px;
+    cursor: pointer;
+}
+.in__buttons:hover{
+    background-color: aqua;
+    box-shadow: 0px 0px 10px rgb(193, 193, 193);
+}
+.in__buttons button{
+    border-radius: 8px;
+    background-color: aqua;
+    border: 0px;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.in__buttons svg{
+    width: 30px;
+    height: 30px;
+}
+.in__buttons:hover svg{
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+/* subbutton */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,255,255,0.2);
+    border-radius: 10px;
+    margin-top: 5px;
+    visibility: hidden;
+    transition: all 180ms ease-in 60ms;
+    opacity: 0;
+    gap: 10px;
+}
+.content a{
+    text-decoration: none;
+    font-family: Poppins;
+    color: white;
+    /* padding-top: 5px; */
+    font-size: 16px;
+    font-weight: 100px;
+    padding: 5px;
+}
+.content a:hover{
+    text-decoration: none;
+    font-family: Poppins;
+    /* padding-top: 5px; */
+    background-color: aqua;
+    color: black;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgb(206, 206, 206);
+}
+.content a:last-child{
+    padding-bottom: 10px;
+    color: red;
+}
+.user__profile:hover .content{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* forms Style  */
+.forms{
+    width: 900px;
+    height: 450px;
+    font-family: Poppins;
+    background-color: rgba(255,255,255,0.13);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid rgba(255,255,255,0.07);
+}
+h1{
+    color: white;
+    font-size: 72px;
+    font-family: Poppins;
+    margin-top: -150px;
+    background: linear-gradient(30deg, rgb(47, 101, 135), aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h4{
+    color: white;
+    font-size: 40px;
+    background: linear-gradient(230deg, rgb(12, 255, 255), rgb(0, 221, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Lform{
+    width: 450px;
+    border-right: 2px solid rgba(255,255,255,0.07);
+}
+.Rform{
+    width: 450px;
+    border-left: 2px solid rgba(255,255,255,0.07);
+    color: white;
+    
+}
+.title__Rform{
+    color: white;
+    font-size: 24px;
+}
+.form__Rform{
+    display: flex;
+}
+.R__Rform{
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.L__Rform{
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.certi__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.button__submit{
+    margin-top: 20px;
+    width: 300px;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(71, 71, 71);
+    border-radius: 5px;
+    height: 32px;
+}
+.button__submit:hover{
+    color: rgb(71, 71, 71);
+    background-color: white;
+   cursor: pointer;
+}
+.Input__code{
+    background-color: rgba(255,255,255,0.07);
+    width: 45%;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.button__code{
+    width: 20%;
+    color: rgb(71, 71, 71);
+    font-family: Poppins;
+    font-size: 154x;
+    background-color: white;
+    border-radius: 5px;
+    height: 32px;
+}
+.button__code:hover{
+    color: white;
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+
+.label__form{
+    margin-top: 10px;
+}
+.Input__form{
+    background-color: rgba(255,255,255,0.07);
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+input,
+button{
+    font-family: inherit;
+    border: 0px;
+    outline: 0px;
+}
+.info__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 300px;
+}
+
+
+/* shapes */
+.shape__1{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: linear-gradient(60deg, rgb(0, 53, 96),rgb(0, 229, 255));
+    border-radius: 100%;
+    top: 150px;
+    right: 250px;
+    border: 0;
+    outline: 0;
+    z-index: -9999999999999999999999999999999;
+    animation: circle1 10s infinite ease-in-out;
+}
+.shape__2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: linear-gradient(290deg, rgb(0, 53, 96),rgb(0, 229, 255));
+    border-radius: 100%;
+    top: 300px;
+    right: 300px;
+    border: 0;
+    outline: 0;
+    z-index: -9999999999999999999999999999999;
+    animation: circle2 10s infinite ease-in-out;
+}
+
+
+
+/* animations */
+@keyframes circle1{
+    0%{
+        top: 150px;
+        right: 250px;
+    }
+    25%{
+        top: 100px;
+        right: 200px;
+    }
+    50%{
+        top: 150px;
+        right: 100px;
+    }
+    75%{
+        top: 50px;
+        right: 50px;
+    }
+    100%{
+        top: 150px;
+        right: 250px;
+    }
+}
+
+@keyframes circle2{
+    0%{
+        top: 300px;
+        right: 300px;
+    }
+    25%{
+        top: 400px;
+        right: 200px;
+    }
+    50%{
+        top: 350px;
+        right: 250px;
+    }
+    75%{
+        top: 250px;
+        right: 50px;
+    }
+    100%{
+        top: 300px;
+        right: 300px;
+    }
+}

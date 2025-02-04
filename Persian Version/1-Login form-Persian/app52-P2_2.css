@@ -1,0 +1,98 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    background-color: #080710;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: B Yekan;
+}
+
+.container{
+    width: 400px;
+    height: 450px;
+    position: relative;
+}
+
+/*Shapes*/
+.shape{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+}
+.shape__one{
+    background-image: linear-gradient(220deg, #2f0f32,#d600da);
+    left: -80px;
+    top: -80px;
+    z-index: -20000000000;
+}
+.shape__two{
+    background-image: linear-gradient(-45deg, rgb(21, 133, 141), rgb(57, 223, 57));
+    right: -60px;
+    bottom: -60px;
+    z-index: -1000000;;
+}
+
+/*Form*/
+form{
+    border: 2px solid rgba(255,255,255,0.13);
+    background-color: rgba(255,255,255,0.13);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 50px 35px 35px 35px;
+}
+.title__form{
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.label__username, .label__password{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.input__username, .input__password{
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255,255,255,0.07);
+    font-weight: 100;
+    font-family: B Nazanin;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 250px;
+}
+.button__form{
+    font-size: 20px;
+    font-family: B Titr;
+    width: 60%;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.13);
+    color: white;
+    padding: 3px;
+    width: 250px;
+}
+.button__form:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+input, button{
+    font-family: inherit;
+    border: none;
+    outline: none;
+}

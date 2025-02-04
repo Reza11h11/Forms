@@ -1,0 +1,206 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    background-color: #080710;
+    color: white;
+    font-family: B Yekan;
+}
+
+h1{
+    font-family: B Yekan;
+    margin-top: 20px;
+    font-size: 90px;
+    background: linear-gradient(235deg,rgb(205, 118, 227),rgb(217, 38, 38));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+/* forms style */
+.container{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.Rbox{
+    width: 400px;
+    border: 2px solid rgba(255,255,255,0.13);
+    background-color: rgba(255, 255, 255, 0.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Lbox{
+    width: 400px;
+    border: 2px solid rgba(255,255,255,0.13);
+    background-color: rgba(255, 255, 255, 0.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.title__Rbox, .title__Lbox{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 48px;
+    background: linear-gradient(210deg, #f7f7f7, #00d5ff); /* گرادیانت */
+      -webkit-background-clip: text; /* پس‌زمینه متن */
+      -webkit-text-fill-color: transparent; /* متن شفاف */
+}
+.formR, .formL{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    
+}
+.label__form{
+    font-size: 20px;  
+    font-weight: 100;
+    font-family: B nazanin;
+    text-align: right;
+}
+.input__form{
+    margin-bottom: 3px;
+    background-color: rgba(255,255,255,0.07);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+input, button{
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+::placeholder{
+    font-size: 16px;
+    font-family: B nazanin;
+    text-align: center;
+}
+.submit__form{
+    padding: 10px;
+    font-family: B titr;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.07);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit__form:hover{
+    background-color: white;
+    color: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.certi{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Rcerti{
+    width: 75%;
+}
+.Lcerti{
+    width: 25%;
+}
+.submit__certi{
+    padding: 5px;
+    font-family: B Yekan;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.07);
+    color: white;
+}
+.submit__certi:hover{
+    background-color: white;
+    color: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+/* shapes style */
+.shape__1{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    background-image: linear-gradient(205deg, rgb(0, 255, 195),blue);
+    top: 125px;
+    right: 275px;
+    z-index: -99999999999999999999999999999;
+    animation: moveCircle1 5s infinite ease-in-out;
+}
+.shape__2{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: absolute;
+    background-image: linear-gradient(140deg, rgb(131, 10, 49),rgb(251, 255, 0));
+    top: 150px;
+    left: 270px;
+    z-index: -999999999999999999999999;
+    animation: moveCircle2 5s infinite ease-in-out;
+}
+
+/*Animations*/
+@keyframes moveCircle1 {
+    0% {
+        top: 125px;
+        right: 275px;
+    }
+    25% {
+        top: 50px;
+        right: 150px;
+    }
+    50% {
+        top: 300px;
+        right: 50px;
+    }
+    75% {
+        top: 200px;
+        right: 400px;
+    }
+    100% {
+        top: 125px;
+        right: 275px;
+    }
+}
+@keyframes moveCircle2 {
+    0% {
+        top: 150px;
+        left: 270px;
+    }
+    25% {
+        top: 300px;
+        left: 150px;
+    }
+    50% {
+        top: 50px;
+        left: 50px;
+    }
+    75% {
+        top: 200px;
+        left: 350px;
+    }
+    100% {
+        top: 150px;
+        left: 270px;
+    }
+}
+
+

@@ -1,0 +1,168 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    font-family: B Yekan;
+    margin: 0;
+    color: white;
+    background-color: #080710;
+}
+
+.container{ 
+    width: 400px;
+    height: 450px;
+    position: relative;
+}
+.title__container{
+    font-family: B titr;
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.shape__1{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-image: linear-gradient(105deg, rgb(0, 0, 119), rgb(0, 200, 255));
+    position: absolute;
+    top: -35px;
+    left: -60px;
+    z-index: -20000000000000000;
+    animation-name: circle1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+.shape__2{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: linear-gradient(255deg, rgb(135, 0, 61), rgb(255, 0, 183));
+    position: absolute;
+    top: -30px;
+    left: 350px;
+    z-index: -20000000000000000;
+    animation-name: circle2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+.shape__3{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-image: linear-gradient(105deg, rgb(0, 119, 42), rgb(0, 255, 4));
+    position: absolute;
+    bottom: -60px;
+    right: 300px;
+    z-index: -20000000000000000;
+    animation-name: circle2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+.shape__4{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: linear-gradient(105deg, rgb(233, 225, 5), rgb(148, 158, 0));
+    position: absolute;
+    bottom: -20px;
+    right: -15px;
+    z-index: -20000000000000000;
+    animation-name: circle1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0
+}
+@keyframes circle1{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: -360deg;
+    }
+}
+@keyframes circle2{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.13);
+    padding: 0px 35px 120px 35px;
+}
+.title1__form{
+    font-family: B titr;
+    font-size: 38px;
+    margin-top: 130px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.title2__form{
+    font-family: B titr;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.label__form{
+    margin-top: 10px;
+}
+.input__form{
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 4px;
+    color: white;
+    direction: rtl;
+}
+input, button{
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+/* .submit__form{
+    width: 45%;
+    margin-top: 20px;
+    font-family: B titr;
+    margin-bottom: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+}
+.submit__form:hover{
+    background-color: rgba(255,255,255,0.13);
+    color: white;
+} */
+.link__form{
+    text-decoration: none;
+    width: 45%;
+    margin-top: 20px;
+    font-family: B titr;
+    margin-bottom: 60px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+}
+.link__form:hover{
+    background-color: rgba(255,255,255,0.13);
+    color: white;
+}
